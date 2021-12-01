@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
 
     <!--配置User对象创建-->
     <bean id="user" class="com.ketty.spring5.User"></bean>
+
+    <!--配置 Book 的对象，并通过 property 标签 在通过 set 方法属性注入进对象-->
+    <bean id="book1" class="com.ketty.spring5.Book">
+        <property name="bname" value="易经经"></property>
+        <property name="bauthor" value="达摩祖师"></property>
+    </bean>
+
+    <!--配置Book的对象，并通过 constructor-arg 标签 在通过带参构造器完成属性注入-->
+
+    <bean id="orders" class="com.ketty.spring5.Orders">
+        <constructor-arg name="oname" value="电脑"></constructor-arg>
+        <constructor-arg name="address" value="China"></constructor-arg>
+    </bean>
 </beans>
