@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--配置User对象创建-->
     <bean id="user" class="com.ketty.spring5.User"></bean>
@@ -17,5 +18,28 @@
     <bean id="orders" class="com.ketty.spring5.Orders">
         <constructor-arg name="oname" value="电脑"></constructor-arg>
         <constructor-arg name="address" value="China"></constructor-arg>
+    </bean>
+
+    <bean id="book2" class="com.ketty.spring5.Book" p:bname="九阳神功" p:bauthor="无名氏"></bean>
+
+
+    <!--配置 Book 的对象，并通过 property 标签 在通过 set 方法属性 null 注入进对象-->
+    <bean id="book3" class="com.ketty.spring5.Book">
+        <property name="bname">
+                <null/>
+        </property>
+        <property name="bauthor" >
+                <null/>
+        </property>
+    </bean>
+
+    <!--配置 Book 的对象，并通过 property 标签 在通过 set 方法属性 特殊值 注入进对象-->
+    <bean id="book4" class="com.ketty.spring5.Book">
+        <property name="bname" >
+            <value><![CDATA[<<南京>>]]></value>
+        </property>
+        <property name="bauthor" >
+            <value><![CDATA[<<北京>>]]></value>
+        </property>
     </bean>
 </beans>

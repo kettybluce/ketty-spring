@@ -40,4 +40,41 @@ public class testDemo {
 //      其中 测试 constructor-arg 标签是否注入属性对象其中，通过 带参构造器 进行属性的注入
         System.out.println(orders);
     }
+
+
+    @Test
+    public void test4() {
+//      通过beanFactory工厂创建和管理对象 手动创建工厂类 去加载 bean.xml 文件
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean1.xml");
+//      使用 context 加载 bean 对象
+//      这个加载的配置文件就是获取到bean中的id属性之
+//      后面对象 class 对于加载对象的泛型
+        Book book2 = context.getBean("book2", Book.class);
+//      bean对象通过 p 的命名空间实现 属性内容的注入
+        System.out.println(book2);
+    }
+
+    @Test
+    public void test5() {
+//      通过beanFactory工厂创建和管理对象 手动创建工厂类 去加载 bean.xml 文件
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean1.xml");
+//      使用 context 加载 bean 对象
+//      这个加载的配置文件就是获取到bean中的id属性之
+//      后面对象 class 对于加载对象的泛型
+        Book book2 = context.getBean("book3", Book.class);
+//      注入默认值null 通过标签 <null/>
+        System.out.println(book2);
+    }
+
+    @Test
+    public void test6() {
+//      通过beanFactory工厂创建和管理对象 手动创建工厂类 去加载 bean.xml 文件
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean1.xml");
+//      使用 context 加载 bean 对象
+//      这个加载的配置文件就是获取到bean中的id属性之
+//      后面对象 class 对于加载对象的泛型
+        Book book2 = context.getBean("book4", Book.class);
+//      注入<![CDATA[<<值>>]]> 可以包含特殊符号的注入方式
+        System.out.println(book2);
+    }
 }
