@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89af01cf-831a-4a9a-9016-d6d8f5d5be83" name="Changes" comment="">
+    <list default="true" id="89af01cf-831a-4a9a-9016-d6d8f5d5be83" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/spring5_demo2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring5_demo1/src/main/resources/bean1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring5_demo1/src/main/resources/bean1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring5_demo1/src/test/java/com/ketty/spring5/testDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring5_demo1/src/test/java/com/ketty/spring5/testDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring5_demo1/target/classes/bean1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring5_demo1/target/classes/bean1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring5_demo1/target/test-classes/com/ketty/spring5/testDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring5_demo1/target/test-classes/com/ketty/spring5/testDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunManager" selected="JUnit.testDemo.test6">
     <configuration name="testDemo.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -158,8 +157,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638314370625</updated>
-      <workItem from="1638314372340" duration="7447000" />
+      <workItem from="1638314372340" duration="8394000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1638486711645</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638486711645</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +185,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
